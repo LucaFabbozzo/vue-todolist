@@ -14,3 +14,11 @@
 // BONUS
 // - Verificare se il task è già presente e nel caso mostrare l’errore
 // - ... il limite è la fantasia ;-)
+
+const { createApp } = Vue;
+
+createApp ({
+  mounted(){
+    console.log('montata')
+  }
+}).mount('#app')
