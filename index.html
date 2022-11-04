@@ -24,7 +24,11 @@
       </div>
       <div class="tasks-area">
         <ul>
-          <li v-for="(list, i) in tasks" class="task">
+          <li 
+          v-for="(list, index) in tasks" 
+          :class="{'done': list.done}"
+          @click="this.tasks[index].done = !this.tasks[index].done;"
+          class="task">
             <span>{{list.text}}</span>
             <i class="fa-solid fa-xmark"></i>
           </li>

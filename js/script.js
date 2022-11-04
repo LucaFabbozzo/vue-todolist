@@ -31,5 +31,6 @@ createApp({
       ],
       logoImg: './img/logo.png'
     }
-  }
+  },
+
 }).mount('#app');
