@@ -14,10 +14,25 @@ body {
   padding: 20px 0;
 }
 
-.logo {
+.logo img {
+  width: 300px;
+}
+
+.logo, .input-area {
   text-align: center;
 }
 
-.logo img {
-  width: 300px;
+.input-area {
+  padding: 40px 0;
+}
+
+.input-area input, .input-area button {
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 1px solid #373737;
+}
+
+.input-area input {
+  width: 250px;
+  margin-right: 15px;
 }
