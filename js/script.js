@@ -44,14 +44,12 @@ createApp({
       }
     },
     addNewTask(){  
-      const control = this.tasks.find(item => {
-        item === this.newTask
-      })
+      const result = this.tasks.find(({text}) => text === this.newTask);
       if(this.newTask.length < 5) {
         this.errorMsg = 'Attention! you must write at least five characters';
-      } else if (control === this.text){
-        this.errorMsg = 'errore'
-      } else { 
+       } else if(result) {
+        this.errorMsg = 'Attention! this task is already on your to-do list'; 
+      } else {
         const newToDo = {
           text: this.newTask,
           done: false
@@ -65,17 +63,3 @@ createApp({
 }).mount('#app');
 
 
-
-
-// bonus
-// const taskControl = this.tasks.find(item => {
-//   item === this.newTask;
-// })
-// console.log(taskControl);
-
-
-// e se invece ti facessi restituire l'item che ha il testo uguale a quello che stai inserendo tu?
-// cosa potresti fare in questo modo, potresti verificare se la funzione restituisce un item
-// se c'è l'item, vuol dire che ne esiste già uno
-// se è vuoto, vuol dire che non ne ha trovati
-// in js c'è la funzione .find
