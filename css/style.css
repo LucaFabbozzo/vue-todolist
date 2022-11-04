@@ -46,6 +46,12 @@ i {
   margin-right: 15px;
 }
 
+.input-area .error-msg {
+  color: red;
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
 .tasks-area {
   background-color: #F6F7F7;
   padding: 30px 35px;

@@ -29,7 +29,8 @@ createApp({
           done: false
         }
       ],
-      logoImg: './img/logo.png'
+      logoImg: './img/logo.png',
+      errorMsg: 'ciao'
     }
   },
 
