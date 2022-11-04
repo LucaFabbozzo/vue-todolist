@@ -55,6 +55,8 @@ createApp({
           text: this.newTask,
           done: false
         }
+        this.tasks.unshift(newToDo);
+        this.newTask = '';
       }
     }
   }
