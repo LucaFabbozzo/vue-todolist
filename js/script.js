@@ -33,5 +33,10 @@ createApp({
       errorMsg: 'ciao'
     }
   },
+  methods: {
+    deleteTask(index) {
+      console.log(index)
+    }
+  }
 
 }).mount('#app');

@@ -31,7 +31,7 @@
           @click="this.tasks[index].done = !this.tasks[index].done;"
           class="task">
             <span>{{list.text}}</span>
-            <i class="fa-solid fa-xmark"></i>
+            <i @click.stop="deleteTask(index)" class="fa-solid fa-xmark"></i>
           </li>
         </ul>
       </div>
