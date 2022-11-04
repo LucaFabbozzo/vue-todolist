@@ -19,8 +19,14 @@
         <img :src="logoImg" alt="Logo">
       </div>
       <div class="input-area">
-        <input type="text" placeholder="New Tasks">
-        <button>Add</button>
+        <input 
+        v-model="newTsk"
+        type="text" 
+        placeholder="New Tasks">
+        <button 
+        @click="addNewTsk()"
+        >
+        Add</button>
         <p class="error-msg">{{errorMsg}}</p>
       </div>
       <div class="tasks-area">
@@ -28,8 +34,7 @@
           <li 
           v-for="(list, index) in tasks" 
           :class="{'done': list.done}"
-          @click="
-          Ç = !this.tasks[index].done;"
+          @click="this.tasks[index].done = !this.tasks[index].done"
           class="task">
             <span>{{list.text}}</span>
             <i @click.stop="deleteTask(index)" class="fa-solid fa-xmark"></i>

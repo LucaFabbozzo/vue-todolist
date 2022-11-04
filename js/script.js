@@ -30,7 +30,8 @@ createApp({
         }
       ],
       logoImg: './img/logo.png',
-      errorMsg: ''
+      errorMsg: '',
+      newTsk: '',
     }
   },
   methods: {
@@ -41,6 +42,9 @@ createApp({
       } else {
         this.errorMsg = 'Pls. do your homework first before deleting this...'
       }
+    },
+    addNewTks(){
+      
     }
   }
 
