@@ -30,12 +30,17 @@ createApp({
         }
       ],
       logoImg: './img/logo.png',
-      errorMsg: 'ciao'
+      errorMsg: ''
     }
   },
   methods: {
     deleteTask(index) {
-      console.log(index)
+      this.errorMsg = '';
+      if(this.tasks[index].done) {
+        console.log('delete')
+      } else {
+        this.errorMsg = 'Pls. do your homework first before deleting this...'
+      }
     }
   }
 
