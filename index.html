@@ -20,7 +20,8 @@
       </div>
       <div class="input-area">
         <input 
-        v-model="newTask"
+        v-model.trim="newTask"
+        @keyup.enter="addNewTask()"
         type="text" 
         placeholder="New Tasks">
         <button 
