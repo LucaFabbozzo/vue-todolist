@@ -60,3 +60,7 @@ i {
 .tasks-area .task:hover {
   background-color: white;
 }
+
+.done {
+  text-decoration: line-through;
+}
