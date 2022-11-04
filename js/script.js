@@ -51,7 +51,10 @@ createApp({
       if(this.newTask.length < 5) {
         this.errorMsg = 'Attention! you must write at least five characters';
       } else {
-        console.log('is Ok');
+        const newToDo = {
+          text: this.newTask,
+          done: false
+        }
       }
     }
   }
