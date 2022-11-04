@@ -31,7 +31,7 @@ createApp({
       ],
       logoImg: './img/logo.png',
       errorMsg: '',
-      newTsk: '',
+      newTask: '',
     }
   },
   methods: {
@@ -43,8 +43,16 @@ createApp({
         this.errorMsg = 'Pls. do your homework first before deleting this...'
       }
     },
-    addNewTks(){
-      
+    addNewTask(){
+      // controllare se newTask.length >= 5
+      // creare un oggetto task
+      // il text del task = newTask e done false
+      // pushare l'oggetto in testa all'array task
+      if(this.newTask.length < 5) {
+        this.errorMsg = 'Attention! you must write at least five characters';
+      } else {
+        console.log('is Ok');
+      }
     }
   }
 
