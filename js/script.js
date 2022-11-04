@@ -1,8 +1,3 @@
-// **Descrizione:**
-// Rifare l’esercizio della to do list.
-// Ogni todo sarà un oggetto, formato da due proprietà:
-// - `text`, una stringa che indica il testo del todo
-// - `done`, un booleano (true/false) che indica se il todo è stato fatto oppure no
 // Steps:
 // 1. avere un elenco di task da fare o fatti
 // 2. stamparli in pagina
@@ -13,12 +8,28 @@
 // 7. se l’elenco è vuoto non mostrare la lista ma mostrare il messaggio “Non ci sono task”
 // BONUS
 // - Verificare se il task è già presente e nel caso mostrare l’errore
-// - ... il limite è la fantasia ;-)
+
 
 const { createApp } = Vue;
 
-createApp ({
-  mounted(){
-    console.log('montata')
+createApp({
+  data(){
+    return {
+      tasks: [
+        {
+          text: 'Prendere la pappa di Artù',
+          done: false
+        },
+        {
+          text: 'Studiare Vue',
+          done: true
+        },
+        {
+          text: 'Fare il bucato',
+          done: false
+        }
+      ],
+      logoImg: './img/logo.png'
+    }
   }
-}).mount('#app')
+}).mount('#app');
