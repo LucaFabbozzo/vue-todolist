@@ -24,7 +24,7 @@ h3 {
 }
 
 .logo img {
-  width: 300px;
+  width: 200px;
 }
 
 .logo, .input-area {
@@ -38,7 +38,8 @@ h3 {
 .input-area input, .input-area button {
   border-radius: 10px;
   padding: 10px 15px;
-  border: 1px solid #373737;
+  border: none;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .input-area button {
@@ -60,6 +61,7 @@ h3 {
   background-color: #F6F7F7;
   padding: 30px 35px;
   border-radius: 10px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .tasks-area .task {

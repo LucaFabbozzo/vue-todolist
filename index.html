@@ -14,10 +14,13 @@
 </head>
 <body>
   <div id="app">
+
     <div class="container"> 
+      <!-- logo -->
       <div class="logo">
         <img :src="logoImg" alt="Logo">
       </div>
+      <!-- input area -->
       <div class="input-area">
         <input 
         v-model.trim="newTask"
@@ -30,6 +33,7 @@
         Add</button>
         <p class="error-msg">{{errorMsg}}</p>
       </div>
+      <!-- tasks area -->
       <div class="tasks-area">
         <ul v-if="tasks.length > 0">
           <li 
@@ -43,8 +47,11 @@
         </ul>
         <h3 v-else>Finally you can take a break! &#128526; there are no tasks for today</h3>
       </div>
+
     </div>
+
   </div>
+
   <script src="./js/script.js"></script>
 </body>
 </html>

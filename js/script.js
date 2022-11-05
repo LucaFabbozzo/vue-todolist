@@ -9,7 +9,6 @@
 // BONUS
 // - Verificare se il task è già presente e nel caso mostrare l’errore
 
-
 const { createApp } = Vue;
 
 createApp({
@@ -17,15 +16,15 @@ createApp({
     return {
       tasks: [
         {
-          text: 'Prendere la pappa di Artù',
+          text: 'Reading a book',
           done: false
         },
         {
-          text: 'Studiare Vue',
+          text: 'Study vue',
           done: true
         },
         {
-          text: 'Fare il bucato',
+          text: 'Buying cat food',
           done: false
         }
       ],
