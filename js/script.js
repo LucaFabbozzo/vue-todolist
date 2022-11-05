@@ -43,6 +43,7 @@ createApp({
       }
     },
     addNewTask(){  
+      this.errorMsg = '';
       const result = this.tasks.find(({text}) => text === this.newTask);
       if(this.newTask.length < 5) {
         this.errorMsg = 'Attention! you must write at least five characters';
