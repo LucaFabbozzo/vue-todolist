@@ -44,7 +44,7 @@ createApp({
     },
     addNewTask(){  
       this.errorMsg = '';
-      const result = this.tasks.find(({text}) => text === this.newTask);
+      const result = this.tasks.find(({text}) => text === this.newTask.toLocaleLowerCase());
       if(this.newTask.length < 5) {
         this.errorMsg = 'Attention! you must write at least five characters';
        } else if(result) {

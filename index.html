@@ -41,7 +41,7 @@
           :class="{'done': list.done}"
           @click="this.tasks[index].done = !this.tasks[index].done"
           class="task">
-            <span>{{list.text}}</span>
+            <span>{{list.text.toLocaleLowerCase()}}</span>
             <i @click.stop="deleteTask(index)" class="fa-regular fa-trash-can"></i>
           </li>
         </ul>
