@@ -16,15 +16,15 @@ createApp({
     return {
       tasks: [
         {
-          text: 'Reading a book',
+          text: 'reading a book',
           done: false
         },
         {
-          text: 'Study vue',
+          text: 'study vue',
           done: true
         },
         {
-          text: 'Buying cat food',
+          text: 'buying cat food',
           done: false
         }
       ],
@@ -63,3 +63,4 @@ createApp({
 }).mount('#app');
 
 
+console.log(tasks)
