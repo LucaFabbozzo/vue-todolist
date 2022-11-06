@@ -11,6 +11,7 @@
 
 const { createApp } = Vue;
 
+
 createApp({
   data(){
     return {
@@ -37,7 +38,7 @@ createApp({
     deleteTask(index) {
       this.errorMsg = '';
       if(this.tasks[index].done) {
-        this.tasks.splice(index, 1)
+        this.tasks.splice(index, 1);
       } else {
         this.errorMsg = 'Pls. do your homework first before deleting this...'
       }
@@ -63,4 +64,4 @@ createApp({
 }).mount('#app');
 
 
-console.log(tasks)
+
